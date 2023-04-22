@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_buttons", "02_buttons\02
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_controls", "03_controls\03_controls.csproj", "{6E5E2AF2-C0BC-4E77-AE12-7462CAB6F18F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_range_controls", "04_range_controls\04_range_controls.csproj", "{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6E5E2AF2-C0BC-4E77-AE12-7462CAB6F18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E5E2AF2-C0BC-4E77-AE12-7462CAB6F18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E5E2AF2-C0BC-4E77-AE12-7462CAB6F18F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
