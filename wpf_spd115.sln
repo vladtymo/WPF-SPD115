@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_base", "01_base\01_base.csproj", "{004DB321-A2C1-4483-864A-27215BF5E2DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_base", "01_base\01_base.csproj", "{004DB321-A2C1-4483-864A-27215BF5E2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_buttons", "02_buttons\02_buttons.csproj", "{0E5F9562-ABCC-4460-BF0A-6F039A06E79E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{004DB321-A2C1-4483-864A-27215BF5E2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{004DB321-A2C1-4483-864A-27215BF5E2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{004DB321-A2C1-4483-864A-27215BF5E2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5F9562-ABCC-4460-BF0A-6F039A06E79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5F9562-ABCC-4460-BF0A-6F039A06E79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5F9562-ABCC-4460-BF0A-6F039A06E79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5F9562-ABCC-4460-BF0A-6F039A06E79E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
