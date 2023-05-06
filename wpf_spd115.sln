@@ -5,11 +5,13 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_base", "01_base\01_base.csproj", "{004DB321-A2C1-4483-864A-27215BF5E2DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_buttons", "02_buttons\02_buttons.csproj", "{0E5F9562-ABCC-4460-BF0A-6F039A06E79E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_buttons", "02_buttons\02_buttons.csproj", "{0E5F9562-ABCC-4460-BF0A-6F039A06E79E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_controls", "03_controls\03_controls.csproj", "{6E5E2AF2-C0BC-4E77-AE12-7462CAB6F18F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_controls", "03_controls\03_controls.csproj", "{6E5E2AF2-C0BC-4E77-AE12-7462CAB6F18F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_range_controls", "04_range_controls\04_range_controls.csproj", "{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_range_controls", "04_range_controls\04_range_controls.csproj", "{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_bindings", "05_bindings\05_bindings.csproj", "{4CAD71BB-E4D2-4035-A427-FAEB321B1ED8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CAD71BB-E4D2-4035-A427-FAEB321B1ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CAD71BB-E4D2-4035-A427-FAEB321B1ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CAD71BB-E4D2-4035-A427-FAEB321B1ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CAD71BB-E4D2-4035-A427-FAEB321B1ED8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

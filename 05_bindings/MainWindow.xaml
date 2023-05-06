@@ -1,0 +1,42 @@
+﻿<Window x:Class="_05_bindings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_05_bindings"
+        d:DataContext="{d:DesignInstance Type=local:ViewModel}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="425" Width="509">
+
+    <StackPanel Margin="15">
+        <TextBlock TextAlignment="Center" FontSize="32">Hello Bindings</TextBlock>
+
+        <TextBlock Margin="5,0" FontSize="18">Mode / Update Source Trigger:</TextBlock>
+        <!--Default Binding Mode:
+                User-editable controls: Two-Way
+                Other: One-Way
+         Default Update Sourse Trigger:
+                Text Property: LostFocus
+                Other: PropertyChanged -->
+        <Slider Name="slider" Margin="5" Maximum="100" TickFrequency="1" IsSnapToTickEnabled="True"></Slider>
+        <TextBox Text="{Binding ElementName=slider, Path=Value, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" Margin="5"></TextBox>
+        <ProgressBar Value="{Binding ElementName=slider, Path=Value}" Margin="5" Height="10" Maximum="100"></ProgressBar>
+
+        <CheckBox Name="enableCheckBox" Margin="5" Content="Button Enable Status"></CheckBox>
+        <Button IsEnabled="{Binding ElementName=enableCheckBox, Path=IsChecked}" Margin="5,0">Push Me</Button>
+
+        <TextBlock Margin="5" FontSize="18">Data Context:</TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <Label>User Email:</Label>
+            <TextBox Text="{Binding Path=CurrentUser.Email}" Margin="5" MinWidth="100"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>User Score:</Label>
+            <TextBox Text="{Binding Path=CurrentUser.Score}" Margin="5" MinWidth="100"></TextBox>
+        </StackPanel>
+        <Button Click="Button_Click" Margin="5">Show User</Button>
+
+        <TextBlock>Colors:</TextBlock>
+        <ComboBox ItemsSource="{Binding Path=Colors}"></ComboBox>
+    </StackPanel>
+</Window>
