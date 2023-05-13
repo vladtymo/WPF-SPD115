@@ -14,11 +14,42 @@
         </Grid.ColumnDefinitions>
         
         <ListBox Name="contactListBox"
-                 DisplayMemberPath="ShortInfo"
                  Grid.Column="0" Background="#FF92CEE9"
                  HorizontalContentAlignment="Stretch"
                  ItemsSource="{Binding Path=Contacts}"
                  SelectedItem="{Binding Path=SelectedContact, Mode=OneWayToSource}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Border Margin="0,0,10,0" Grid.RowSpan="2" Width="40" Height="40" CornerRadius="50">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Background" Value="DarkGray"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsBlocked}" Value="True">
+                                            <Setter Property="Background" Value="Coral"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock FontWeight="Bold" Grid.Column="1" VerticalAlignment="Center">
+                            <Run Text="{Binding Name}" />
+                            <Run Text="{Binding Surname}" />
+                        </TextBlock>
+                        <TextBlock Text="{Binding Phone}" Grid.Column="1" VerticalAlignment="Center" Grid.Row="1" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         
         <GridSplitter HorizontalAlignment="Center"
