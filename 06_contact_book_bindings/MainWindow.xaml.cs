@@ -70,9 +70,10 @@ namespace _06_contact_book_bindings
     }
 
     // TODO: implement INotifyPropertyChanged
+    [PropertyChanged.AddINotifyPropertyChangedInterface]
     public class Contact : ICloneable
     {
-        public string Name { get; set; }
+        public string Name { get; set; } // OnPropertyChanged "Name" | "ShortInfo" 
         public string Surname { get; set; }
         public int Age { get; set; }
         public string Phone { get; set; }
@@ -89,7 +90,9 @@ namespace _06_contact_book_bindings
             return copy;
         }
 
+        [PropertyChanged.DependsOn("Name", "Surname", "Phone")]
         public string ShortInfo => ToString();
+
         public override string ToString()
         {
             return $"{Name} {Surname} : {Phone}";

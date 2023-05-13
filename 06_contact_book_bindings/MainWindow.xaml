@@ -27,9 +27,9 @@
         
         <StackPanel Grid.Column="2" Background="#FF4F7694">
             <Label HorizontalAlignment="Center">Name</Label>
-            <TextBox Text="{Binding Path=SelectedContact.Name}" Margin="20,0"></TextBox>
+            <TextBox Text="{Binding Path=SelectedContact.Name, UpdateSourceTrigger=PropertyChanged}" Margin="20,0"></TextBox>
             <Label HorizontalAlignment="Center">Surname</Label>
-            <TextBox Text="{Binding Path=SelectedContact.Surname}" Margin="20,0"></TextBox>
+            <TextBox Text="{Binding Path=SelectedContact.Surname, UpdateSourceTrigger=PropertyChanged}" Margin="20,0"></TextBox>
             <Label HorizontalAlignment="Center">Age</Label>
             <TextBox Text="{Binding Path=SelectedContact.Age}" Margin="20,0"></TextBox>
             <Label HorizontalAlignment="Center">Phone</Label>
