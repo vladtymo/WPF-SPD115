@@ -2,3 +2,4 @@
 
 ### Topics
 - [XAML Resources](https://github.com/vladtymo/WPF-Resources)
+- [Styles (Setters & Triggers)](https://github.com/vladtymo/WPF-Styles)
