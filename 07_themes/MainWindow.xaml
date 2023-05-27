@@ -1,0 +1,84 @@
+﻿<Window x:Class="_07_themes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_07_themes"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="468" Width="411">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml" />-->
+                <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Card.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.CheckBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Popupbox.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Vertical">
+            <TextBlock FontSize="22" TextAlignment="Center">Sample Window Layout</TextBlock>
+            <TextBox Margin="5"></TextBox>
+            <UniformGrid Margin="5" Columns="3">
+                <RadioButton>Slow</RadioButton>
+                <RadioButton>Medium</RadioButton>
+                <RadioButton>Fast</RadioButton>
+            </UniformGrid>
+            <UniformGrid Margin="5" Columns="3">
+                <CheckBox Margin="5">Check Me</CheckBox>
+                <ToggleButton
+                    Checked="ToggleButton_Checked"
+                    Unchecked="ToggleButton_Unchecked"
+                  IsChecked="True"
+                  Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                  ToolTip="MaterialDesignSwitchToggleButton" />
+                <ToggleButton
+                  Content="{materialDesign:PackIcon Kind=Heart,                                                         Size=21}"
+                  IsChecked="True"
+                  Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}"
+                  ToolTip="MaterialDesignFlatPrimaryToggleButton" />    
+            </UniformGrid>
+            <Slider Margin="5"></Slider>
+            <ProgressBar IsIndeterminate="True" Height="10" Margin="5"></ProgressBar>
+            <Button Margin="5">Click Me</Button>
+            <ProgressBar
+              IsIndeterminate="True"
+              Style="{StaticResource MaterialDesignCircularProgressBar}"
+              Value="0" />
+            <!--<materialDesign:Flipper Margin="5"
+              materialDesign:FlipperAssist.UniformCornerRadius="8"
+              Style="{StaticResource MaterialDesignCardFlipper}">
+                <materialDesign:Flipper.FrontContent>
+                    <Button
+                        Margin="8"
+                        Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                        Content="Rounded Card Flipper 1"
+                        Style="{StaticResource MaterialDesignFlatButton}" />
+                </materialDesign:Flipper.FrontContent>
+                <materialDesign:Flipper.BackContent>
+                    <Button
+                        Margin="8"
+                        Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                        Content="GO BACK"
+                        Style="{StaticResource MaterialDesignFlatButton}" />
+                </materialDesign:Flipper.BackContent>
+            </materialDesign:Flipper>-->
+            <TextBlock>List of Items</TextBlock>
+        </StackPanel>
+        <ListBox Margin="5">
+            <ListBoxItem>Order #45 from Vlad</ListBoxItem>
+            <ListBoxItem>Order #62 from Nastya</ListBoxItem>
+            <ListBoxItem>Order #32 from Bogdan</ListBoxItem>
+        </ListBox>
+    </DockPanel>
+</Window>

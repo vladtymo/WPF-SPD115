@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_controls", "03_controls\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_range_controls", "04_range_controls\04_range_controls.csproj", "{1654D9B7-8E2B-4F50-8229-F29C3AEE7927}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_bindings", "05_bindings\05_bindings.csproj", "{4CAD71BB-E4D2-4035-A427-FAEB321B1ED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_bindings", "05_bindings\05_bindings.csproj", "{4CAD71BB-E4D2-4035-A427-FAEB321B1ED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_contact_book_bindings", "06_contact_book_bindings\06_contact_book_bindings.csproj", "{4912A3B1-0E01-4902-94B5-00CBC0DF807E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_contact_book_bindings", "06_contact_book_bindings\06_contact_book_bindings.csproj", "{4912A3B1-0E01-4902-94B5-00CBC0DF807E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_themes", "07_themes\07_themes.csproj", "{9E4733C7-047C-43FE-9EBF-82C580DF8634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{4912A3B1-0E01-4902-94B5-00CBC0DF807E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4912A3B1-0E01-4902-94B5-00CBC0DF807E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4912A3B1-0E01-4902-94B5-00CBC0DF807E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E4733C7-047C-43FE-9EBF-82C580DF8634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4733C7-047C-43FE-9EBF-82C580DF8634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4733C7-047C-43FE-9EBF-82C580DF8634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4733C7-047C-43FE-9EBF-82C580DF8634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
