@@ -1,4 +1,4 @@
-# WPF Lesson Examples for PD221 Group
+# WPF Lessons Examples for SPD115 Group
 
 ### Topics
 - [Containers](https://github.com/vladtymo/WPF-Containers)
